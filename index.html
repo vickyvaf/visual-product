@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Product</title>
+  <style>
+    :root {
+      --white: #fff;
+      --dark-gray: #222222;
+    }
+
+    .header {
+      background-color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .link {
+      text-decoration: none;
+      color: var(--dark-gray);
+    }
+
+    .link-login {
+      background-color: var(--dark-gray);
+      color: var(--white);
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="./assests/logo.svg" />
+
+    <nav class="nav">
+      <a href="/" class="link">Home</a>
+      <a href="/about" class="link">About</a>
+      <a href="/blog" class="link">Blog</a>
+      <a href="/contact" class="link">Contact</a>
+      <a href="/login" class="link-login">Get Started</a>
+    </nav>
+  </header>
+</body>
+
+</html>
