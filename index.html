@@ -19,6 +19,12 @@
       padding: 30px;
     }
 
+    @media only screen and (max-width: 600px) {
+      .header {
+        flex-direction: column;
+      }
+    }
+
     .nav {
       display: flex;
       gap: 20px;
@@ -41,7 +47,7 @@
 
 <body>
   <header class="header">
-    <img src="./assests/logo.svg" />
+    <img src="./assests/logo.svg" class="logo" />
 
     <nav class="nav">
       <a href="/" class="link">Home</a>
