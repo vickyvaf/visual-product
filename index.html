@@ -4,57 +4,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visual Product</title>
+  <title>Web</title>
+
   <style>
     :root {
-      --white: #fff;
-      --dark-gray: #222222;
+      --aqua: #24AFB5;
+      --white: #FFFFFF;
+      --black: #1C1C1C;
     }
 
-    .header {
-      background-color: var(--white);
+    header {
+      padding: 20px 30px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 30px;
+      font-family: 'Inter', sans-serif;
     }
 
-    @media only screen and (max-width: 600px) {
-      .header {
-        flex-direction: column;
+    .left-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .right-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--black);
+    }
+
+    .fifth-link {
+      color: var(--aqua);
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      background-color: var(--aqua);
+      color: var(--white);
+      padding: 8px 12px;
+      gap: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .menu {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .left-nav>a {
+        display: none;
+      }
+
+      .right-nav>a {
+        display: none;
       }
     }
 
-    .nav {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .link {
-      text-decoration: none;
-      color: var(--dark-gray);
-    }
-
-    .link-login {
-      background-color: var(--dark-gray);
-      color: var(--white);
-      padding: 10px 20px;
-      text-decoration: none;
+    @media screen and (min-width: 768px) {
+      .right-nav>img {
+        display: none;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header class="header">
-    <img src="./assests/logo.svg" class="logo" />
+  <header>
+    <nav class="left-nav">
+      <img src="./assests/logo2.svg" class="logo" />
+      <a href="/">First Link</a>
+      <a href="/">Second Link</a>
+      <a href="/">Third Link</a>
+      <a href="/">Fourth Link</a>
+    </nav>
 
-    <nav class="nav">
-      <a href="/" class="link">Home</a>
-      <a href="/about" class="link">About</a>
-      <a href="/blog" class="link">Blog</a>
-      <a href="/contact" class="link">Contact</a>
-      <a href="/login" class="link-login">Get Started</a>
+    <nav class="right-nav">
+      <a href="/" class="fifth-link">Fifth Link</a>
+      <a class="btn">
+        Button <img src="./assests/logo-button.svg" />
+      </a>
+
+      <img src="./assests/menu.png" class="menu" />
     </nav>
   </header>
 </body>
