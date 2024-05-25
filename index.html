@@ -11,13 +11,18 @@
       --aqua: #24AFB5;
       --white: #FFFFFF;
       --black: #1C1C1C;
+      --gray: #585757;
+      --border: #DBDBDB;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
     }
 
     header {
       padding: 20px 30px;
       display: flex;
       justify-content: space-between;
-      font-family: 'Inter', sans-serif;
     }
 
     .left-nav {
@@ -75,6 +80,49 @@
         display: none;
       }
     }
+
+    .section-short-heading {
+      max-width: 730px;
+      margin: 0 auto;
+    }
+
+    .section-short-heading>h1 {
+      font-size: 48px;
+      color: var(--black);
+      text-align: center;
+    }
+
+    .section-short-heading>p {
+      font-size: 20px;
+      color: var(--gray);
+      text-align: center;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: auto;
+      padding: 60px 30px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      gap: 8px;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+    }
+
+    .item {
+      display: flex;
+      gap: 16px;
+      min-width: 540px;
+      padding: 30px;
+      font-size: 1.3rem;
+      border: 1px solid var(--border);
+      background-color: var(--white);
+      border-radius: 8px;
+    }
   </style>
 </head>
 
@@ -97,6 +145,103 @@
       <img src="./assests/menu.png" class="menu" />
     </nav>
   </header>
+
+  <section class="section-short-heading">
+    <h1>Short Heading</h1>
+    <p>Each and every one of us has that moment when we are suddenly stunned when we come face to face with the
+      enormity of the universe.</p>
+  </section>
+
+  <div class="container">
+    <div class="flex-container">
+      <div class="item" id="item-1">
+        <img src="./assests/profile.svg" style="margin-bottom: auto;" />
+
+        <div>
+          <img src="./assests/double-quote.svg" />
+          <p style="color: var(--gray);">Moment in the life of any aspiring astronomer of that it is time to buy that
+            first telescope.</p>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p>Bertha Blake</p>
+
+            <div>
+              <img src="./assests/twitter.svg" />
+              <img src="./assests/facebook.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-2">
+        <img src="./assests/profile.svg" style="margin-bottom: auto;" />
+
+        <div>
+          <img src="./assests/double-quote.svg" />
+          <p style="color: var(--gray);">Moment in the life of any aspiring astronomer of that it is time to buy that
+            first telescope.</p>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p>Bertha Blake</p>
+
+            <div>
+              <img src="./assests/twitter.svg" />
+              <img src="./assests/facebook.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-3">
+        <img src="./assests/profile.svg" style="margin-bottom: auto;" />
+
+        <div>
+          <img src="./assests/double-quote.svg" />
+          <p style="color: var(--gray);">Moment in the life of any aspiring astronomer of that it is time to buy that
+            first telescope.</p>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p>Bertha Blake</p>
+
+            <div>
+              <img src="./assests/twitter.svg" />
+              <img src="./assests/facebook.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-4">
+        <img src="./assests/profile.svg" style="margin-bottom: auto;" />
+
+        <div>
+          <img src="./assests/double-quote.svg" />
+          <p style="color: var(--gray);">Moment in the life of any aspiring astronomer of that it is time to buy that
+            first telescope.</p>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p>Bertha Blake</p>
+
+            <div>
+              <img src="./assests/twitter.svg" />
+              <img src="./assests/facebook.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin: 0 auto; width: 100px; display: flex; justify-content: center; margin-top: 30px; gap: 8px;">
+      <a href="#item-1"
+        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
+      <a href="#item-2"
+        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
+      <a href="#item-3"
+        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
+      <a href="#item-4"
+        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
+    </div>
+  </div>
 </body>
 
 </html>
