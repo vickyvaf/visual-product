@@ -123,6 +123,21 @@
       background-color: var(--white);
       border-radius: 8px;
     }
+
+    .dot-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 30px;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--gray);
+      border-radius: 100%;
+    }
   </style>
 </head>
 
@@ -231,15 +246,11 @@
       </div>
     </div>
 
-    <div style="margin: 0 auto; width: 100px; display: flex; justify-content: center; margin-top: 30px; gap: 8px;">
-      <a href="#item-1"
-        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
-      <a href="#item-2"
-        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
-      <a href="#item-3"
-        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
-      <a href="#item-4"
-        style="cursor: pointer; width: 8px; height: 8px; background-color: var(--gray); border-radius: 100%;"></a>
+    <div class="dot-container">
+      <a href="#item-1" class="dot"></a>
+      <a href="#item-2" class="dot"></a>
+      <a href="#item-3" class="dot"></a>
+      <a href="#item-4" class="dot"></a>
     </div>
   </div>
 </body>
